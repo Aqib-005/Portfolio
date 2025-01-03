@@ -64,6 +64,46 @@ nav a:hover {
   color: #dcdcdc;
 }
 
+#typing-effect {
+  font-size: 3em;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+}
+
+#typing-effect::after {
+  content: "";
+  position: absolute;
+  right: -0.25em;
+  top: 0;
+  width: 0.6em;
+  height: 1em;
+  background-color: #ffcc00;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* ----terminal styling----- */
 
 .terminal {
@@ -109,7 +149,7 @@ nav a:hover {
 .terminal-header .terminal-title {
   margin-left: auto;
   color: #dcdcdc;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", monospace;
   font-size: 0.9em;
 }
 
@@ -170,12 +210,15 @@ nav a:hover {
 
 .project-content {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   gap: 20px;
+  align-items: flex-start; /* Align items to the top */
 }
 
 .image-container {
   flex: 1;
-  max-width: 300px; /* Adjust as needed */
+  min-width: 250px; /* Minimum width for the image container */
+  max-width: 300px; /* Maximum width for the image container */
   height: 200px; /* Fixed height for images */
   overflow: hidden;
   border-radius: 10px;
@@ -226,7 +269,7 @@ nav a:hover {
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Spacing between icon and text */
+  gap: 8px;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -236,27 +279,27 @@ nav a:hover {
 }
 
 .btn i {
-  font-size: 1.2em; /* Adjust icon size */
+  font-size: 1.2em;
 }
 
 .live-demo {
-  background-color: #ffcc00; /* Match blue button */
+  background-color: #ffcc00;
   color: white;
   border: none;
 }
 
 .live-demo:hover {
-  background-color: #ffb000; /* Darker blue on hover */
+  background-color: #ffb000;
 }
 
 .view-source {
-  background-color: transparent; /* Transparent button */
+  background-color: transparent;
   color: #ffcc00;
-  border: 2px solid #ffcc00; /* Blue border */
+  border: 2px solid #ffcc00;
 }
 
 .view-source:hover {
-  background-color: #ffb000; /* Blue background on hover */
+  background-color: #ffb000;
   color: white;
 }
 
@@ -290,7 +333,7 @@ nav a:hover {
 .contact-links .btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Spacing between icon and text */
+  gap: 8px;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -300,37 +343,37 @@ nav a:hover {
 }
 
 .contact-links .btn i {
-  font-size: 1.2em; /* Icon size */
+  font-size: 1.2em;
 }
 
 .contact-links .email {
-  background-color: transparent; /* Transparent button */
+  background-color: transparent;
   color: #ffcc00;
   border: 2px solid #ffcc00;
 }
 
 .contact-links .email:hover {
-  background-color: #d32f2f; /* Darker red */
+  background-color: #d32f2f;
 }
 
 .contact-links .linkedin {
-  background-color: transparent; /* Transparent button */
+  background-color: transparent;
   color: #ffcc00;
   border: 2px solid #ffcc00;
 }
 
 .contact-links .linkedin:hover {
-  background-color: #005582; /* Darker LinkedIn blue */
+  background-color: #005582;
 }
 
 .contact-links .github {
-  background-color: transparent; /* Transparent button */
+  background-color: transparent;
   color: #ffcc00;
   border: 2px solid #ffcc00;
 }
 
 .contact-links .github:hover {
-  background-color: #2dba4e; /* Darker GitHub black */
+  background-color: #2dba4e;
 }
 
 .footer {
