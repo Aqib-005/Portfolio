@@ -1,7 +1,7 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
+  background-color: #f0e6db;
+  color: #f0e6db;
+  font-family: "Courier New", Gotham, monospace;
   margin: 0;
   padding: 0;
 }
@@ -31,13 +31,13 @@ nav li {
 }
 
 nav a {
-  color: #dcdcdc;
+  color: #4d3a33;
   text-decoration: none;
   font-size: 1em;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #4d3a33;
   text-decoration: underline;
 }
 
@@ -55,18 +55,18 @@ nav a:hover {
 
 .about h1 {
   font-size: 3em;
-  color: #ffcc00;
+  color: #4d3a33;
   margin-bottom: 20px;
 }
 
 .about p {
   font-size: 1.2em;
-  color: #dcdcdc;
+  color: #4d3a33;
 }
 
 #typing-effect {
   font-size: 3em;
-  color: #ffcc00;
+  color: #4d3a33;
   margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
@@ -81,7 +81,7 @@ nav a:hover {
   top: 0;
   width: 0.6em;
   height: 1em;
-  background-color: #ffcc00;
+  background-color: #4d3a33;
   animation: blink-caret 0.75s step-end infinite;
 }
 
@@ -107,7 +107,7 @@ nav a:hover {
 /* ----terminal styling----- */
 
 .terminal {
-  background-color: #1e1e1e;
+  background-color: #163204;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
   max-width: 800px;
@@ -190,13 +190,13 @@ nav a:hover {
 
 .projects h1 {
   font-size: 2.5em;
-  color: #cccccc;
+  color: #4d3a33;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .project {
-  background-color: #2d2d2d;
+  background-color: #163204;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
@@ -236,7 +236,7 @@ nav a:hover {
 
 .project h2 {
   font-size: 1.8em;
-  color: #ffcc00;
+  color: #c0751d;
   margin-bottom: 15px;
 }
 
@@ -254,8 +254,8 @@ nav a:hover {
 }
 
 .technologies span {
-  background-color: #1e1e1e;
-  color: #ffcc00;
+  background-color: #100d08;
+  color: #c0751d;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.9em;
@@ -283,8 +283,8 @@ nav a:hover {
 }
 
 .live-demo {
-  background-color: #ffcc00;
-  color: white;
+  background-color: #c0751d;
+  color: #f0e6db;
   border: none;
 }
 
@@ -294,13 +294,13 @@ nav a:hover {
 
 .view-source {
   background-color: transparent;
-  color: #ffcc00;
-  border: 2px solid #ffcc00;
+  color: #c0751d;
+  border: 2px solid #c0751d;
 }
 
 .view-source:hover {
   background-color: #ffb000;
-  color: white;
+  color: #f0e6db;
 }
 
 /* ----contact styling----- */
@@ -313,14 +313,14 @@ nav a:hover {
 
 .contact h1 {
   font-size: 2em;
-  color: #ffcc00;
+  color: #4d3a33;
   margin-bottom: 20px;
 }
 
 .contact p {
   font-size: 1.2em;
   margin-bottom: 20px;
-  color: #dcdcdc;
+  color: #f0e6db;
 }
 
 .contact-links {
@@ -348,8 +348,8 @@ nav a:hover {
 
 .contact-links .email {
   background-color: transparent;
-  color: #ffcc00;
-  border: 2px solid #ffcc00;
+  color: #4d3a33;
+  border: 2px solid #4d3a33;
 }
 
 .contact-links .email:hover {
@@ -358,8 +358,8 @@ nav a:hover {
 
 .contact-links .linkedin {
   background-color: transparent;
-  color: #ffcc00;
-  border: 2px solid #ffcc00;
+  color: #4d3a33;
+  border: 2px solid #4d3a33;
 }
 
 .contact-links .linkedin:hover {
@@ -368,8 +368,8 @@ nav a:hover {
 
 .contact-links .github {
   background-color: transparent;
-  color: #ffcc00;
-  border: 2px solid #ffcc00;
+  color: #4d3a33;
+  border: 2px solid #4d3a33;
 }
 
 .contact-links .github:hover {
@@ -379,7 +379,7 @@ nav a:hover {
 .footer {
   text-align: center;
   padding: 20px;
-  color: gray;
+  color: #380507;
   margin-top: 50px;
   font-size: 0.9em;
 }
